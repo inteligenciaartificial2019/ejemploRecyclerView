@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:clickable="true"
+              android:background="?attr/selectableItemBackground">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="220dp" app:srcCompat="@drawable/platillo01" android:id="@+id/ivPlatillo"
+            android:layout_marginTop="8dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvNombre" android:layout_margin="16dp"
+            android:textSize="20sp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_marginBottom="8dp">
+        <TextView
+                android:text="L 200.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/tvPrecio" android:layout_weight="1"
+                android:layout_margin="16dp" android:textColor="@color/colorPrimary" android:textSize="26sp"
+                android:textStyle="bold"/>
+        <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/rbPuntuacion" android:layout_weight="0"
+                android:numStars="5" android:rating="3.5"/>
+    </LinearLayout>
+</LinearLayout>

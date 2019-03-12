@@ -39,13 +39,13 @@ class MainActivity : AppCompatActivity() {
 
         // Adaptador
         val adapter = CustomAdapter(this, platillos, object: ClickListener {
-            override fun onClick(view: View, index: Int) {
-                Toast.makeText(applicationContext, platillos.get(index).nombre, Toast.LENGTH_SHORT).show()
+                override fun onClick(view: View, index: Int) {
+                    Toast.makeText(applicationContext, platillos[index].nombre, Toast.LENGTH_SHORT).show()
+                }
             }, object: LongClickListener {
                 override fun longClickListener(view: View, index: Int) {
                     Log.d("LONG", "Long click listener")
                 }
-            }
         })
 
         laLista.adapter = adapter
